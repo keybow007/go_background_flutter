@@ -27,7 +27,7 @@ abstract class GoBackgroundFlutterPlatform extends PlatformInterface {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 
-  //----ここまではプロジェクト作成段階で実装済み
+  //TODO ----ここまではプロジェクト作成段階で実装済み
   //  => インターフェイスクラスでは例外を投げるだけ（MethodChannelの呼び出しは継承先のmethod_channel.dartでオーバーライド）
   Future<void> goBackground() {
     throw UnimplementedError('goBackground() has not been implemented.');

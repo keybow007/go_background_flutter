@@ -2,7 +2,7 @@
 import 'go_background_flutter_platform_interface.dart';
 
 /*
-* Developing plugin packages
+* TODO プラグインパッケージの開発方法（Flutter公式）
 * https://docs.flutter.dev/development/packages-and-plugins/developing-packages#plugin
 *
 * Federated plugins（プラットフォームごとにソースコードを分離したプラグイン）の３つの構成要素
@@ -22,13 +22,13 @@ import 'go_background_flutter_platform_interface.dart';
 *
 * */
 
-//アプリ側から呼び出すAPI（１のapp-facing package）
+//TODO アプリ側から呼び出すAPI（１のapp-facing package）
 class GoBackgroundFlutter {
   Future<String?> getPlatformVersion() {
     return GoBackgroundFlutterPlatform.instance.getPlatformVersion();
   }
 
-  //----ここまではプロジェクト作成段階で実装済み
+  //TODO ----ここまではプロジェクト作成段階で実装済み
   Future<void> goBackground() {
     return GoBackgroundFlutterPlatform.instance.goBackground();
   }

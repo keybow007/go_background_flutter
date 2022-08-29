@@ -13,6 +13,7 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 
 /** GoBackgroundFlutterPlugin */
+//TODO Android側のプラグイン実装は「プラグイン名FlutterPlugin.kt」ファイルで行う
 class GoBackgroundFlutterPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
 //class GoBackgroundFlutterPlugin: FlutterPlugin, MethodCallHandler {
   /// The MethodChannel that will the communication between Flutter and native Android
@@ -45,7 +46,7 @@ class GoBackgroundFlutterPlugin: FlutterPlugin, MethodCallHandler, ActivityAware
     }
 
 
-    //プロジェクト作成時に実装されていたコードはこれ（これにChannelメソッドをif文で追加する）
+    //TODO  プロジェクト作成時に実装されていたコードはこれ（これにChannelメソッドをif文で追加する）
 //    if (call.method == "getPlatformVersion") {
 //      result.success("Android ${android.os.Build.VERSION.RELEASE}")
 //    } else {
@@ -53,11 +54,11 @@ class GoBackgroundFlutterPlugin: FlutterPlugin, MethodCallHandler, ActivityAware
 //    }
   }
 
-  //----ここまではプロジェクト作成段階で実装済み
+  //TODO  ----ここまではプロジェクト作成段階で実装済み
 
-  //this.activityを使うためにActivityAwareインターフェイスを使用
+  //TODO  this.activityを使うためにActivityAwareインターフェイスを使用
   //https://api.flutter.dev/javadoc/io/flutter/embedding/engine/plugins/activity/ActivityAware.html
-  //コーディングはminimize_appプラグイン踏襲
+  //TODO  コーディングはminimize_appプラグイン踏襲
   //https://github.com/Vanethos/minimize_app_plugin/blob/master/android/src/main/kotlin/com/vanethos/minimize_app/MinimizeAppPlugin.kt
   override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
     channel.setMethodCallHandler(null)

@@ -15,12 +15,12 @@ class MethodChannelGoBackgroundFlutter extends GoBackgroundFlutterPlatform {
     return version;
   }
 
-  //----ここまではプロジェクト作成段階で実装済み
+  //TODO ----ここまではプロジェクト作成段階で実装済み
 
-  //３のインターフェイスクラスで定義したメソッドの本実装（オーバーライドさせる）
+  ///TODO ３のインターフェイスクラスで定義したメソッドの本実装（オーバーライドさせる）
   @override
   Future<void> goBackground() async {
-    await methodChannel.invokeMapMethod("goBackground");
+    await methodChannel.invokeMethod("goBackground");
   }
 
 
