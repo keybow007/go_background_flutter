@@ -22,9 +22,14 @@ import 'go_background_flutter_platform_interface.dart';
 *
 * */
 
-
+//アプリ側から呼び出すAPI（１のapp-facing package）
 class GoBackgroundFlutter {
   Future<String?> getPlatformVersion() {
     return GoBackgroundFlutterPlatform.instance.getPlatformVersion();
+  }
+
+  //----ここまではプロジェクト作成段階で実装済み
+  Future<void> goBackground() {
+    return GoBackgroundFlutterPlatform.instance.goBackground();
   }
 }
